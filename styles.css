@@ -134,7 +134,7 @@ body {
     padding: 120px 20px 80px;
     position: relative;
     overflow: hidden;
-    background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -229,6 +229,14 @@ body {
     background-clip: text;
 }
 
+.projects .section-title {
+    color: var(--text-primary);
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+}
+
 .section-subtitle {
     text-align: center;
     color: var(--text-secondary);
@@ -262,14 +270,27 @@ body {
     background: var(--gradient-1);
     position: relative;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+/* 웹 애플리케이션 - 웹 개발 이미지 */
+.project-card:nth-child(1) .project-image {
+    background-image: linear-gradient(135deg, rgba(99, 102, 241, 0.8) 0%, rgba(139, 92, 246, 0.8) 100%),
+                      url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2015&q=80');
+}
+
+/* 모바일 앱 - 모바일 디바이스 이미지 */
 .project-card:nth-child(2) .project-image {
-    background: var(--gradient-2);
+    background-image: linear-gradient(135deg, rgba(245, 101, 101, 0.8) 0%, rgba(236, 72, 153, 0.8) 100%),
+                      url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
 }
 
+/* 데이터 시각화 - 데이터/차트 이미지 */
 .project-card:nth-child(3) .project-image {
-    background: var(--gradient-3);
+    background-image: linear-gradient(135deg, rgba(79, 172, 254, 0.8) 0%, rgba(0, 242, 254, 0.8) 100%),
+                      url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
 }
 
 .project-overlay {
